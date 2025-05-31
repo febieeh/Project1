@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    scroll-behavior: smooth;
+}
+.nav{
+    background-color: rgb(235, 173, 181);
+     display: flex;
+     margin:10px 20px 30px 20px;
+     position: sticky;
+     top:0;
+}
+body{
+    background-color: rgb(92, 33, 43);
+    background-image: url("pexel.jpeg");
+    background-size: cover;
+    backdrop-filter: blur(6px);
+}
+.nav ul{
+    background-color: rgb(235, 182, 182);
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+   
+}
+h2{
+    color: rgb(34, 6, 61);
+}
+.nav li{
+    font-size: 20px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    list-style-type: none;
+}
+.nav li:hover{
+    transform: translateY(-5px);
+    transform: .3s ease ;
+    color: rgb(65, 95, 56);
+
+}
+img:hover{
+  transform: scale(90%) ;
+  transition: .3s ease;
+}
+form{
+    background-color: rgb(247, 215, 167) ;
+    border: solid 2px rgb(15, 8, 8);
+    width: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+button{
+   
+  margin-top: 10px;
+    width:100px;
+    height: 45px;
+    font-size: 24px;
+    background-color: rgb(58, 105, 90);
+    border-radius: 15px;
+    border: dashed rgb(86, 86, 141);
+    color: rgb(145, 163, 161);
+
+}
+.Home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    scroll-margin: 65px;
+    animation: bblur 10s;
+}
+h1{
+    background-color: rgba(4, 15, 15, 0.911);
+    color: antiquewhite;
+    animation: color 5s;
+}
+.sign{
+    display: flex;
+     flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    scroll-margin: 65px;
+
+
+}
+.About{
+  height: 50vh;
+  scroll-margin: 65px;
+
+}
+details{
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  background-color: rgba(166, 175, 80, 0.26);
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 20px;
+
+}
+summary{
+    font-size: 40px;
+    border: 30;
+
+}
+.detail1{
+    background-color: rgba(12, 77, 77, 0.438);
+}
+
+.detail2{
+    background-color: rgba(36, 121, 78, 0.849);
+}
+.dt{
+    color: rgb(232, 235, 230);
+}
+.Contact{
+     height: 25vh;
+    scroll-margin: 65px;
+}
+@keyframes color{
+    0%{
+       color: rgb(47, 130, 202);
+       transform: translateY(40px);
+    }
+    100%{
+    color: rgb(238, 228, 235);
+     transform: translateY(0px);
+    }
+    }
+
+@keyframes bblur{
+      0%{
+       backdrop-filter: blur(100px);
+    }
+    100%{
+       backdrop-filter: blur(1px);
+    }
+}
